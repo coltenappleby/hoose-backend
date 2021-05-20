@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :favorited_zips
   resources :job_searches
   resources :housing_data
   resources :zip_codes

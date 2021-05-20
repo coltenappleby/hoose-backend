@@ -1,0 +1,2 @@
+class FavoritedZipsController < ApplicationController
+end
