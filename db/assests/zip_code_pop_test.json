@@ -1,0 +1,74 @@
+[
+  {
+    "zip": 77449,
+    "city": "Katy",
+    "county": "Harris",
+    "pop": 128294
+  },
+  {
+    "zip": 77494,
+    "city": "Katy",
+    "county": "Fort Bend",
+    "pop": 118291
+  },
+  {
+    "zip": 11368,
+    "city": "Corona",
+    "county": "Queens",
+    "pop": 112088
+  },
+  {
+    "zip": 79936,
+    "city": "El Paso",
+    "county": "El Paso",
+    "pop": 111620
+  },
+  {
+    "zip": 90011,
+    "city": "Los Angeles",
+    "county": "Los Angeles",
+    "pop": 111165
+  },
+  {
+    "zip": 60629,
+    "city": "Chicago",
+    "county": "Cook",
+    "pop": 110029
+  },
+  {
+    "zip": 75034,
+    "city": "Frisco",
+    "county": "Collin",
+    "pop": 108525
+  },
+  {
+    "zip": 11385,
+    "city": "Ridgewood",
+    "county": "Queens",
+    "pop": 107796
+  },
+  {
+    "zip": 77084,
+    "city": "Houston",
+    "county": "Harris",
+    "pop": 107673
+  },
+  {
+    "zip": 91331,
+    "city": "Pacoima",
+    "county": "Los Angeles",
+    "pop": 105458
+  },
+  {
+    "zip": 90650,
+    "city": "Norwalk",
+    "county": "Los Angeles",
+    "pop": 105304
+  },
+  {
+    "zip": 75070,
+    "city": "Mc Kinney",
+    "county": "Collin",
+    "pop": 104415
+  }
+]
