@@ -60,8 +60,10 @@ ActiveRecord::Schema.define(version: 2021_05_20_220922) do
 
   create_table "zip_codes", force: :cascade do |t|
     t.integer "zip"
+    t.string "name"
     t.integer "population"
     t.string "state"
+    t.string "county"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
