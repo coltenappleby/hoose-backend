@@ -3,4 +3,5 @@ class HousingDatum < ApplicationRecord
 
   validates :zip_code_id, :month, :year, :sales_count, :avg_price, presence: true
 
+  
 end
