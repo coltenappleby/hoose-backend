@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  post 'users/login', to: 'users#login'
+
   resources :favorited_zips
   resources :job_searches
   resources :housing_data
