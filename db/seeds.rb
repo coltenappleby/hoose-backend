@@ -59,24 +59,24 @@ require 'csv'
 
 ############ Seed All US Zip Codes Job Searches  ################
 
-ZipCode.all.each do |location| 
-    query_url = "https://www.indeed.com/jobs?l=#{location.zip.to_s}&radius=15&jt=fulltime&fromage=7&remotejob=7e3167e4-ccb4-49cb-b761-9bae564a0a63" 
-    html = URI.open(query_url)
-    response = Nokogiri::HTML(html)
-    if response.nil?
-        puts location.zip.to_s
-    end
-    num_jobs = response.css("div#searchCountPages").text.split("of ")[1].split(" jobs")[0].split(",").join()
-    JobSearch.create(
-        zip_code_id: location.id,
-        remote: false,
-        radius: 15,
-        job_type: "fulltime",
-        date_posted: "14",
-        number_of_posts: num_jobs,
-        user_id: User.all.sample.id
-        )
-end
+# ZipCode.all.each do |location| 
+#     query_url = "https://www.indeed.com/jobs?l=#{location.zip.to_s}&radius=15&jt=fulltime&fromage=7&remotejob=7e3167e4-ccb4-49cb-b761-9bae564a0a63" 
+#     html = URI.open(query_url)
+#     response = Nokogiri::HTML(html)
+#     if response.nil?
+#         puts location.zip.to_s
+#     end
+#     num_jobs = response.css("div#searchCountPages").text.split("of ")[1].split(" jobs")[0].split(",").join()
+#     JobSearch.create(
+#         zip_code_id: location.id,
+#         remote: false,
+#         radius: 15,
+#         job_type: "fulltime",
+#         date_posted: "14",
+#         number_of_posts: num_jobs,
+#         user_id: User.all.sample.id
+#         )
+# end
 
 
 ############ Housing Data Seed #######################
@@ -96,4 +96,7 @@ end
 #         sales_count: zipcodeInstance[2],
 #         avg_price: zipcodeInstance[3])
 # end
+
+############ Delete Old Housing Data #######################
+HousingDatum.where.not(year: [2020, 2021]).destroy_all
 
