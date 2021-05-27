@@ -3,4 +3,5 @@ class ZipCodeSerializer < ActiveModel::Serializer
 
     has_many :job_searches
     has_many :housing_data
+    # has_many :favorited_zips
 end

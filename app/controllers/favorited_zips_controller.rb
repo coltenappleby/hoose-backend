@@ -12,4 +12,9 @@ class FavoritedZipsController < ApplicationController
     def destroy
         FavoritedZip.find(params[:id]).destroy
     end
+
+    def index
+        favorites = FavoritedZip.all
+        render json: favorites
+    end
 end
